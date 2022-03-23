@@ -30,7 +30,6 @@ body {
   background-image: url(images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
-
   background-color: var(--color-primary);
   height: 100%;
   width: 100%;
@@ -74,12 +73,11 @@ body {
 
 .content .illustration img {
   width: 100%;
-  max-width: 420px;
+  max-width: 400px;
   margin-top: 0.5em;
 }
 
 .content .text {
-  height: 50%;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -108,7 +106,7 @@ body {
   width: 190px;
   height: 38px;
   background-color: var(--color-text);
-  border-radius: 1.5em;
+  border-radius: 2em;
   color: var(--color-primary);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.267);
   cursor: pointer;
@@ -144,10 +142,95 @@ body {
   border-radius: 50%;
 }
 
-.footer .icons-wrapper .icon i {
-  color: var(--color-text);
+.footer .icons-wrapper .icon:hover {
+  border: 1px solid var(--color-secondary);
+  transition: all 0.3s ease;
 }
 
+.footer .icons-wrapper .icon a {
+  color: var(--color-text);
+  text-decoration: none;
+}
 
+.footer .icons-wrapper .icon a:hover {
+  color: var(--color-secondary);
+  transition: all 0.3s ease;
+}
 
+/* MEDIA QUERY */
+
+@media (max-width: 270px) {
+  .content .text p {
+    font-size: 0.8em;
+  }
+
+  .content .text .btn-register {
+    width: 140px;
+  }
+}
+
+@media (min-width: 790px) {
+  .background {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: repeat;
+    background-size: cover;
+
+  }
+}
+
+@media  (min-width: 1000px) {
+  .container {
+    width: 88%;
+  }
+  
+  .header {
+    height: 20%;
+  }
+
+  .header .logo {
+    height: 35%;
+  }
+
+  .content {
+    height: 65%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .content .illustration {
+    justify-content: flex-start;
+  }
+
+  .content .illustration img {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .content .text {
+    width: 40%;
+    align-items: flex-start;
+    margin-top: -4em;
+  }
+
+  .content .text h2 {
+    font-size: 2em;
+    text-align: start;
+  }
+
+  .content .text p {
+    text-align: start;
+  }
+
+  .content .text .btn-register  {
+    font-size: 0.9em;
+    width: 160px;
+    height: 45px;
+  }
+
+  .footer {
+    margin-right: 0;
+  }
+}
 
