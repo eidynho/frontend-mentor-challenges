@@ -1,3 +1,7 @@
+# Link to result
+
+https://eidynho.github.io/frontend-mentor-challenges/huddle-landing-page-single-section/index.html
+
 # Frontend Mentor - Huddle landing page with single introductory section
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
