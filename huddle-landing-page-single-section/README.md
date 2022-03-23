@@ -1,4 +1,4 @@
-# Link to result
+# Result link
 
 https://eidynho.github.io/frontend-mentor-challenges/huddle-landing-page-single-section/index.html
 
