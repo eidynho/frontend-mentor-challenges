@@ -94,7 +94,7 @@ body {
 }
 
 .content .text p {
-  line-height: 1.5em;
+  line-height: 1.7em;
   margin-top: 1em;
   text-align: center;
   font-size: 1em;
@@ -174,12 +174,13 @@ body {
   .background {
     background-image: url(images/bg-desktop.svg);
     background-repeat: repeat;
+    background-size: cover;
   }
 }
 
 @media  (min-width: 1000px) {
   .container {
-    width: 88%;
+    width: 90%;
   }
   
   .header {
@@ -187,7 +188,7 @@ body {
   }
 
   .header .logo {
-    height: 30%;
+    height: 33%;
   }
 
   .content {
@@ -216,7 +217,7 @@ body {
   }
 
   .content .text h1 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     text-align: start;
   }
 
@@ -226,17 +227,21 @@ body {
 
   .content .text .btn-register  {
     font-size: 0.9em;
-    width: 170px;
-    height: 50px;
+    width: 180px;
+    height: 55px;
   }
 
   .footer {
     margin-right: 0;
   }
+
+  .footer .icons-wrapper {
+    margin-top: 1em;
+  }
 }
 
-@media (max-width: 1320px) {
+@media (min-width: 1435px) {
   .background {
-    background-size: cover;
+    background-size: contain;
   }
 }
