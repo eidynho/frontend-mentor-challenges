@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap');
+
+$color-soft-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-blue: #3DBEFF;
+$color-light-blue: #85D7FF;
+$color-dark-cyan: hsl(167, 40%, 24%);
+$color-dark: hsl(198, 62%, 26%);
+$color-dark-moderate-cyan: hsl(168, 34%, 41%);
+
+$color-dark-desaturated-blue: hsl(212, 27%, 19%);
+$color-very-dark-grayish-blue: hsl(213, 9%, 39%);
+$color-dark-grayish-blue: hsl(232, 10%, 55%);
+$color-grayish-blue: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+$font-family-titles: 'Fraunces', serif; //700, 900
+$font-family-texts: 'Barlow', sans-serif; //600
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    width: 100vw;
+    font-family: $font-family-texts;
+}
+
+.header {
+    background-color: $color-blue;
+    height: 44.45em;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .container-header {
+        width: 94%;
+        height: 100%;
+        margin: auto;
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 15.5%;
+
+            img {
+                width: 12.5%;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    list-style: none;
+                    padding: 1.4em;
+
+                    &:last-child {
+                        padding-right: 0em;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $color-white;
+                        font-weight: 400;
+                        font-size: 0.98em;
+                    }
+
+                    & #contact {
+                        padding: 1.1em 1.85em;
+                        font-family: $font-family-titles;
+                        font-size: 0.9em;
+                        font-weight: 900;
+                        background-color: $color-white;
+                        border-radius: 2em;
+                        color: $color-dark-desaturated-blue;
+                        letter-spacing: -0.06em;
+
+                        &:hover {
+                            background-color: $color-light-blue;
+                            color: $color-white;
+                            transition: all 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        .principal {
+            display: flex;
+            flex-direction: column;
+            height: 84.5%;
+            position: relative;
+
+            .title {
+                margin-top: 1.35em;
+                font-family: $font-family-titles;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 3em;
+                letter-spacing: 0.19em;
+                color: $color-white;
+            }
+
+            .image-header {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+
+                #arrow-down {
+                    margin-top: 5.2em;
+                }
+            }
+        }
+    }
+}

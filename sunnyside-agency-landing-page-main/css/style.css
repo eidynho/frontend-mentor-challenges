@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  width: 100vw;
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  background-color: #3DBEFF;
+  height: 44.45em;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header .container-header {
+  width: 94%;
+  height: 100%;
+  margin: auto;
+}
+
+.header .container-header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15.5%;
+}
+
+.header .container-header .menu img {
+  width: 12.5%;
+}
+
+.header .container-header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .container-header .menu ul li {
+  list-style: none;
+  padding: 1.4em;
+}
+
+.header .container-header .menu ul li:last-child {
+  padding-right: 0em;
+}
+
+.header .container-header .menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 0.98em;
+}
+
+.header .container-header .menu ul li #contact {
+  padding: 1.1em 1.85em;
+  font-family: "Fraunces", serif;
+  font-size: 0.9em;
+  font-weight: 900;
+  background-color: white;
+  border-radius: 2em;
+  color: #23303e;
+  letter-spacing: -0.06em;
+}
+
+.header .container-header .menu ul li #contact:hover {
+  background-color: #85D7FF;
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header .container-header .principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 84.5%;
+  position: relative;
+}
+
+.header .container-header .principal .title {
+  margin-top: 1.35em;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 0.19em;
+  color: white;
+}
+
+.header .container-header .principal .image-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container-header .principal .image-header #arrow-down {
+  margin-top: 5.2em;
+}
+/*# sourceMappingURL=style.css.map */
