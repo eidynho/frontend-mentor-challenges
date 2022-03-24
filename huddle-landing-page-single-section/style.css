@@ -86,7 +86,7 @@ body {
   margin-top: 3.5em;
 }
 
-.content .text h2 {
+.content .text h1 {
   font-size: 1.5em;
   line-height: 1.6em;
   letter-spacing: 0.02em;
@@ -94,10 +94,10 @@ body {
 }
 
 .content .text p {
-  line-height: 1.7em;
+  line-height: 1.5em;
   margin-top: 1em;
   text-align: center;
-  font-size: 0.92em;
+  font-size: 1em;
 }
 
 .content .text .btn-register {
@@ -107,6 +107,7 @@ body {
   height: 38px;
   background-color: var(--color-text);
   border-radius: 2em;
+  border: none;
   color: var(--color-primary);
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.267);
   cursor: pointer;
@@ -173,8 +174,6 @@ body {
   .background {
     background-image: url(images/bg-desktop.svg);
     background-repeat: repeat;
-    background-size: cover;
-
   }
 }
 
@@ -188,7 +187,7 @@ body {
   }
 
   .header .logo {
-    height: 35%;
+    height: 30%;
   }
 
   .content {
@@ -204,18 +203,20 @@ body {
   }
 
   .content .illustration img {
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 3em;
   }
 
   .content .text {
-    width: 40%;
+    width: 38%;
     align-items: flex-start;
     margin-top: -4em;
+    margin-left: 3em;
   }
 
-  .content .text h2 {
-    font-size: 2em;
+  .content .text h1 {
+    font-size: 2.2em;
     text-align: start;
   }
 
@@ -225,8 +226,8 @@ body {
 
   .content .text .btn-register  {
     font-size: 0.9em;
-    width: 160px;
-    height: 45px;
+    width: 170px;
+    height: 50px;
   }
 
   .footer {
@@ -234,3 +235,8 @@ body {
   }
 }
 
+@media (max-width: 1320px) {
+  .background {
+    background-size: cover;
+  }
+}
