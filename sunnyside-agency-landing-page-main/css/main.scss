@@ -20,7 +20,7 @@
             align-items: center;
             height: 15.5%;
 
-            img {
+            #logo {
                 width: 8em;
             }
 
@@ -43,7 +43,7 @@
                         font-size: 0.98em;
                     }
 
-                    & #contact {
+                    #contact {
                         padding: 1.1em 1.85em;
                         font-family: $font-family-titles;
                         font-size: 0.9em;
@@ -61,7 +61,61 @@
                     }
                 }
             }
+            .menu-hamburguer {
+                display: none;
+                cursor: pointer;
+            }
         }
+
+        .polygon {
+            height: 295px;
+            width: 90%;
+            margin: auto;
+            clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+            background-color: rgba(255, 255, 255, 0.671);
+            
+            ul {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    list-style: none;
+                    margin: 0.8em 0;
+
+                    &:first-child {
+                        margin-top: 3em;
+                    }
+
+                    &:last-child {
+                        margin-top: 1.5em;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $color-dark-desaturated-blue;
+                        font-weight: 600;
+                    }
+
+
+                    #contact-hamburguer {
+                        padding: 1.2em 1.8em;
+                        font-family: $font-family-titles;
+                        font-size: 0.8em;
+                        font-weight: 900;
+                        border-radius: 2em;
+                        background-color: $color-yellow-btn;
+                        color: $color-dark-desaturated-blue;
+                    
+                        &:hover {
+                            background-color: $color-yellow-btn-hover;
+                            transition: all 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+
 
         .principal {
             display: flex;
@@ -379,9 +433,9 @@
         margin: auto;
 
         img {
-            margin-top: 4em;
-            width: 50%;
-            color: $color-dark-cyan;
+            margin: 4em auto 0 auto;
+            width: 55%;
+            filter: invert(55%) sepia(62%) saturate(390%) hue-rotate(116deg) brightness(93%) contrast(86%);
         }
 
         .menu {
@@ -391,6 +445,8 @@
             ul {
                 display: flex;
                 justify-content: space-around;
+                width: 80%;
+                margin: auto;
 
                 li {
                     list-style: none;
@@ -445,6 +501,52 @@
     }
 
     .main {
+        .grid-container {
+            .text-transform {
+                .title-grid {
+                    font-size: 1.9em;   
+                }
+
+                .text-grid {
+                    font-size: 0.8em;
+                }
+            }
+
+            .text-stand-out {
+                .title-grid {
+                    font-size: 1.9em;   
+                }
+
+                .text-grid {
+                    font-size: 0.8em;
+                }
+            }
+
+            .graphic-design {
+                .text {
+                    .title-grid {
+                        font-size: 1.2em;   
+                    }
+    
+                    .text-grid {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+
+            .photography {
+                .text {
+                    .title-grid {
+                        font-size: 1.2em;   
+                    }
+    
+                    .text-grid {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+
         .client-testimonials {
             .client-testimonials-container {
                 h2 {
@@ -455,6 +557,10 @@
                     .client {
                         padding: 2.2em 1em 1.5em 1em;
 
+
+                        &:last-child {
+                            padding-bottom: 4em;
+                        }
                         .text-testimonials {
                             margin: 0.9em 0;
                         }
@@ -474,10 +580,34 @@
                 nav {
                     display: none;
                 }
+
+                .menu-hamburguer {
+                    display: block;
+                }
             }
         }
     }
 }
+
+@media (min-width: 600px) and (max-width: 1300px) {
+    .main {
+        .grid-container {
+            .image-transform {
+                img {
+                    content: url(../images/desktop/image-transform-min.jpg);
+                }
+            }
+
+            .image-stand-out {
+                img {
+                    content: url(../images/desktop/image-stand-out-min.jpg);
+                    
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 1300px) {
     .main {

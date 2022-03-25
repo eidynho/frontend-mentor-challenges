@@ -13,8 +13,12 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
-  background-color: #3DBEFF;
+  background-color: #3dbeff;
   height: 44.45em;
   background-image: url(../images/desktop/image-header.jpg);
   background-position: center bottom;
@@ -41,7 +45,7 @@ body {
   height: 15.5%;
 }
 
-.header .container-header .menu img {
+.header .container-header .menu #logo {
   width: 8em;
 }
 
@@ -82,8 +86,71 @@ body {
 }
 
 .header .container-header .menu ul li #contact:hover {
-  background-color: #85D7FF;
+  background-color: #85d6ff;
   color: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header .container-header .menu .menu-hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.header .container-header .polygon {
+  height: 295px;
+  width: 90%;
+  margin: auto;
+  -webkit-clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+  background-color: rgba(255, 255, 255, 0.671);
+}
+
+.header .container-header .polygon ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container-header .polygon ul li {
+  list-style: none;
+  margin: 0.8em 0;
+}
+
+.header .container-header .polygon ul li:first-child {
+  margin-top: 3em;
+}
+
+.header .container-header .polygon ul li:last-child {
+  margin-top: 1.5em;
+}
+
+.header .container-header .polygon ul li a {
+  text-decoration: none;
+  color: #23303e;
+  font-weight: 600;
+}
+
+.header .container-header .polygon ul li #contact-hamburguer {
+  padding: 1.2em 1.8em;
+  font-family: "Fraunces", serif;
+  font-size: 0.8em;
+  font-weight: 900;
+  border-radius: 2em;
+  background-color: #ffe23d;
+  color: #23303e;
+}
+
+.header .container-header .polygon ul li #contact-hamburguer:hover {
+  background-color: #e5d05d;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -491,9 +558,10 @@ body {
 }
 
 .footer .container-footer img {
-  margin-top: 4em;
-  width: 50%;
-  color: #25564b;
+  margin: 4em auto 0 auto;
+  width: 55%;
+  -webkit-filter: invert(55%) sepia(62%) saturate(390%) hue-rotate(116deg) brightness(93%) contrast(86%);
+          filter: invert(55%) sepia(62%) saturate(390%) hue-rotate(116deg) brightness(93%) contrast(86%);
 }
 
 .footer .container-footer .menu {
@@ -507,6 +575,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 80%;
+  margin: auto;
 }
 
 .footer .container-footer .menu ul li {
@@ -556,11 +626,38 @@ body {
   .header .container-header .principal .title {
     font-size: 1.6em;
   }
+  .main .grid-container .text-transform .title-grid {
+    font-size: 1.9em;
+  }
+  .main .grid-container .text-transform .text-grid {
+    font-size: 0.8em;
+  }
+  .main .grid-container .text-stand-out .title-grid {
+    font-size: 1.9em;
+  }
+  .main .grid-container .text-stand-out .text-grid {
+    font-size: 0.8em;
+  }
+  .main .grid-container .graphic-design .text .title-grid {
+    font-size: 1.2em;
+  }
+  .main .grid-container .graphic-design .text .text-grid {
+    font-size: 0.7em;
+  }
+  .main .grid-container .photography .text .title-grid {
+    font-size: 1.2em;
+  }
+  .main .grid-container .photography .text .text-grid {
+    font-size: 0.7em;
+  }
   .main .client-testimonials .client-testimonials-container h2 {
     font-size: 0.9em;
   }
   .main .client-testimonials .client-testimonials-container .box-testimonials .client {
     padding: 2.2em 1em 1.5em 1em;
+  }
+  .main .client-testimonials .client-testimonials-container .box-testimonials .client:last-child {
+    padding-bottom: 4em;
   }
   .main .client-testimonials .client-testimonials-container .box-testimonials .client .text-testimonials {
     margin: 0.9em 0;
@@ -573,6 +670,18 @@ body {
   }
   .header .container-header .menu nav {
     display: none;
+  }
+  .header .container-header .menu .menu-hamburguer {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1300px) {
+  .main .grid-container .image-transform img {
+    content: url(../images/desktop/image-transform-min.jpg);
+  }
+  .main .grid-container .image-stand-out img {
+    content: url(../images/desktop/image-stand-out-min.jpg);
   }
 }
 

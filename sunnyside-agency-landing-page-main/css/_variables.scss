@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap');
 
 $color-soft-red: hsla(7, 99%, 70%, 0.37);
+$color-yellow-btn: hsl(51, 100%, 62%);
+$color-yellow-btn-hover: hsl(51, 72%, 63%);
 $color-yellow: hsla(51, 100%, 62%, 0.37);
-$color-blue: #3DBEFF;
-$color-light-blue: #85D7FF;
+$color-blue: hsl(200, 100%, 62%);
+$color-light-blue: hsl(200, 100%, 76%);
 $color-dark-cyan: hsl(167, 40%, 24%);
 $color-dark: hsl(198, 62%, 26%);
 $color-dark-moderate-cyan: hsl(168, 34%, 41%);
@@ -13,7 +15,7 @@ $color-very-dark-grayish-blue: hsl(213, 9%, 39%);
 $color-dark-grayish-blue: hsl(232, 10%, 55%);
 $color-grayish-blue: hsl(210, 4%, 67%);
 $color-white: hsl(0, 0%, 100%);
-$color-semi-white: rgb(252, 252, 252);
+$color-semi-white: hsl(0, 0%, 99%);
 
 $font-family-titles: 'Fraunces', serif; //700, 900
 $font-family-texts: 'Barlow', sans-serif; //600
