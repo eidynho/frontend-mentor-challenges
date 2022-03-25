@@ -1,5 +1,5 @@
 # Result link:
-![Result](https://eidynho.github.io/frontend-mentor-challenges/sunnyside-agency-landing-page-main/index.html)
+https://eidynho.github.io/frontend-mentor-challenges/sunnyside-agency-landing-page-main/index.html
 
 # Frontend Mentor - Sunnyside agency landing page
 
