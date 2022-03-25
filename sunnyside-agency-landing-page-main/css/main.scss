@@ -1,36 +1,7 @@
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@700;900&display=swap');
 
-$color-soft-red: hsla(7, 99%, 70%, 0.37);
-$color-yellow: hsla(51, 100%, 62%, 0.37);
-$color-blue: #3DBEFF;
-$color-light-blue: #85D7FF;
-$color-dark-cyan: hsl(167, 40%, 24%);
-$color-dark: hsl(198, 62%, 26%);
-$color-dark-moderate-cyan: hsl(168, 34%, 41%);
-$color-footer: #90D4C5;
-
-$color-dark-desaturated-blue: hsl(212, 27%, 19%);
-$color-very-dark-grayish-blue: hsl(213, 9%, 39%);
-$color-dark-grayish-blue: hsl(232, 10%, 55%);
-$color-grayish-blue: hsl(210, 4%, 67%);
-$color-white: hsl(0, 0%, 100%);
-$color-semi-white: rgb(252, 252, 252);
-
-$font-family-titles: 'Fraunces', serif; //700, 900
-$font-family-texts: 'Barlow', sans-serif; //600
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 18px;
-    width: 100%;
-    font-family: $font-family-texts;
-}
+@import 'base';
+@import 'variables';
 
 .header {
     background-color: $color-blue;
